@@ -1,0 +1,8 @@
+@import "../../scss/constant.scss";
+
+.#{$mining-prefix} {
+  &-affix {
+    position: fixed;
+    z-index: 10;
+  }
+}

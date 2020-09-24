@@ -1,0 +1,17 @@
+@import "../../scss/constant.scss";
+
+.#{$mining-prefix} {
+  &-col {
+    display: block;
+    min-height: 1px;
+    &-0 {
+      display: none;
+    }
+    @for $i from 1 through 24 {
+      &-#{$i} {
+        flex: 0 0 (100%/24) * $i;
+        max-width: (100%/24) * $i;
+      }
+    }
+  }
+}

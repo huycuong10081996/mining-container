@@ -1,0 +1,41 @@
+@import "../../scss/constant.scss";
+
+.#{$mining-prefix} {
+  &-flex {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &-justify {
+    &-center {
+      justify-content: center;
+    }
+    &-between {
+      justify-content: space-between;
+    }
+    &-around {
+      justify-content: space-around;
+    }
+    &-start {
+      justify-content: flex-start;
+    }
+    &-end {
+      justify-content: flex-end;
+    }
+  }
+
+  &-align {
+    &-middle {
+      align-items: center;
+    }
+
+    &-start {
+      align-items: flex-start;
+    }
+    &-end {
+      align-items: flex-end;
+    }
+    &-stretch {
+      align-items: stretch;
+    }
+  }
+}
